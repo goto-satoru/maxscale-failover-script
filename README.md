@@ -12,9 +12,13 @@ rvm install ruby-2.6
 
 2. install bundler rubygem (if not installed)
 
-3. bundle install
+```
+gem install bundler
+```
+
+3. ```bundle install```
 
 4. install maxscale (to use maxctrl)
 
-5. ruby mxs-monitor.rb
+5. ``ruby mxs-monitor.rb```
 
