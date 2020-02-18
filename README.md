@@ -20,5 +20,9 @@ gem install bundler
 
 4. install maxscale (to use maxctrl)
 
-5. ``ruby mxs-monitor.rb```
+5. run the montoring script
+
+```
+ruby mxs-monitor.rb
+```
 
