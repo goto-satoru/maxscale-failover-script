@@ -12,7 +12,7 @@ class MaxScale
   attr_accessor :hostname, :name, :mdbmon_state, :passive, :stopped
 
   def initialize(hostname, name)
-    @hostname = hostname; @name=name; @mdbmon_state = ""; @passive=false; @stopped=false;
+    @hostname = hostname; @name=name; @mdbmon_state = ""; @passive=nil; @stopped=nil;
   end
 
   def check_status(print = false)
@@ -105,7 +105,6 @@ if $0 == __FILE__
       mxs2.set_passive(true)
     end
 
-    puts "----------------------------------------"
     sleep MONITOR_INTERVAL
   end
 end
