@@ -108,3 +108,7 @@ if $0 == __FILE__
     sleep MONITOR_INTERVAL
   end
 end
+
+# Disclaimer 
+# this script is for demonstration purpose only. 
+# No warranty or guarentee is implied or expressly granted.
