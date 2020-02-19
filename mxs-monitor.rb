@@ -34,7 +34,7 @@ class MaxScale
       self.print_status if print
       @stopped = false
     rescue
-      puts "!!! #{@name}(#{@hostname}): MaraiDB-Monitor state retrieval timeout"
+      puts "!!! #{@name}(#{@hostname}): MariaDB-Monitor state retrieval timeout"
       @mdbmon_state = 'Stopped'
       @stopped = true
     end
