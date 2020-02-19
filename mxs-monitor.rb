@@ -21,7 +21,6 @@ class MaxScale
       json = RestClient::Request.execute(method: :get, url: uri, timeout: TIMEOUT)
       results = JSON.parse(json)
       @passive = results['data']['attributes']['parameters']['passive']
-#      printf "#{@name}(#{@hostname}) - passive = %-5s ", @passive if print
     rescue
       puts "!!! #{@name}(#{@hostname}): passive paramter retrieval timeout"
       @passive = nil
